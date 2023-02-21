@@ -1,5 +1,5 @@
 # No Kill Louisville Pet Food Bank Android Mobile App
-![My Image](/doc/dogs (1).jfif)
+
 ## About the No Kill Louisville Pet Food Bank 
 The No Kill Louisville Pet Food Bank Mobile App is designed to help the No Kill Lousville Pet Food bank on operations day. Operations day is usually the first Saturday of every month. Several willing volunteers welcome pet owners and load their cars with pet food depending on their needs. This is usually a very busy day with few hands to help.
 ## About the App
