@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1046062932210",
+    "project_id": "nokilllouisvilleandroid",
+    "storage_bucket": "nokilllouisvilleandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046062932210:android:a6256b1fbaf55a0d41306b",
+        "android_client_info": {
+          "package_name": "com.example.nokilllouisvilleandroidphoneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046062932210-87vlsau3jpspp0i9eg47cabq2n8l8asl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nokilllouisvilleandroidphoneapp",
+            "certificate_hash": "19575ef1f875a1e898a506055bf81b313bb7995b"
+          }
+        },
+        {
+          "client_id": "1046062932210-fcbhkpm4sda1sb3hut8bnnpe59ca2chj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzu_t2drXx3FQRETO4S7UWXoT0SVqUskA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046062932210-1eaimrrj4gp9p4eorb8eseni1nhcha9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
