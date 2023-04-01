@@ -8,6 +8,9 @@ xmlns:android="http://schemas.android.com/apk/res/android">
     android:title="Edit Emojis"
     app:showAsAction="always" />
 <item
+    android:id="@+id/miSched"
+    android:title="Schedule" />
+<item
     android:id="@+id/miLogout"
     android:title="Logout" />
 </menu>

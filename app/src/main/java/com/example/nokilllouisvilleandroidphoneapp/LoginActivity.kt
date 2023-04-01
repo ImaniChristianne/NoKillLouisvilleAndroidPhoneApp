@@ -1,11 +1,11 @@
-package com.example.nokilllouisvilleandroidphoneapp.MainActivity.MainActivity
+package com.example.nokilllouisvilleandroidphoneapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.nokilllouisvilleandroidphoneapp.R
+import com.example.nokilllouisvilleandroidphoneapp.MainActivity.MainActivity.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton

@@ -4,19 +4,17 @@ import android.content.ContentValues.TAG
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.text.InputFilter
-import android.text.Spanned
 import android.util.Log
 import android.view.*
 import android.widget.EditText
-import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.nokilllouisvilleandroidphoneapp.MainActivity.MainActivity.LoginActivity
+import com.example.nokilllouisvilleandroidphoneapp.AcuitySchedule
+import com.example.nokilllouisvilleandroidphoneapp.LoginActivity
 import com.example.nokilllouisvilleandroidphoneapp.R
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
@@ -74,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.miLogout) {
+        /*if (item.itemId == R.id.miLogout) {
             Log.i(TAG, "Logout")
             auth.signOut()
             val logoutIntent = Intent(this, LoginActivity::class.java)
@@ -82,6 +80,23 @@ class MainActivity : AppCompatActivity() {
             startActivity(logoutIntent)
         } else if (item.itemId == R.id.miEdit) {
             showAlertDialog()
+        }*/
+        when (item.itemId){
+            R.id.miLogout -> {
+                Log.i(TAG, "Logout")
+                auth.signOut()
+                val logoutIntent = Intent(this, LoginActivity::class.java)
+                logoutIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(logoutIntent)
+            }
+            R.id.miSched -> {
+                Log.i(TAG, "Schedule")
+                val schedIntent = Intent(this, AcuitySchedule::class.java)
+                startActivity(schedIntent)
+            }
+            R.id.miEdit -> {
+                showAlertDialog()
+            }
         }
         return super.onOptionsItemSelected(item)
     }

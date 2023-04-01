@@ -54,4 +54,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:20.4.1'
 
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+
+    //Acuity
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.+")
 }
