@@ -18,5 +18,8 @@ exports.addUserToFirestore = functions.auth.user().onCreate((user) => {
   return usersRef.doc(user.uid).set({
     displayName: user.displayName,
     emojis: "\u{1F43C}\u{1F33F}\u{2764}", // panda, herb, heart emoji
+    documentStatus: "\u{1F43C}\u{1F33F}\u{2764}", // panda, herb, heart emoji
+    
   });
+
 });

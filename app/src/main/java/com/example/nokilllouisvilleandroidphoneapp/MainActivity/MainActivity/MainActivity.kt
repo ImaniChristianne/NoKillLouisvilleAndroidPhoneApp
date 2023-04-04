@@ -26,7 +26,9 @@ import com.google.firebase.ktx.Firebase
 
 data class User(
     val displayName: String = "",
-    val emojis: String = ""
+    val emojis: String = "",
+    val documentStatus: String = " ",
+
 )
 
 class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
@@ -106,7 +108,7 @@ class MainActivity : AppCompatActivity() {
         val editText = EditText(this)
 
         val dialog = AlertDialog.Builder(this)
-            .setTitle("Update your parking spot")
+            .setTitle("Confirm your appointment time: ")
             .setView(editText)
             .setNegativeButton("Cancel", null)
             .setPositiveButton("OK", null)
@@ -123,6 +125,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "No signed in user", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
             db.collection("users").document(currentUser.uid)
                 .update("emojis", emojisEntered)
             dialog.dismiss()
