@@ -75,15 +75,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        /*if (item.itemId == R.id.miLogout) {
-            Log.i(TAG, "Logout")
-            auth.signOut()
-            val logoutIntent = Intent(this, LoginActivity::class.java)
-            logoutIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            startActivity(logoutIntent)
-        } else if (item.itemId == R.id.miEdit) {
-            showAlertDialog()
-        }*/
+
         when (item.itemId){
             R.id.miLogout -> {
                 Log.i(TAG, "Logout")
