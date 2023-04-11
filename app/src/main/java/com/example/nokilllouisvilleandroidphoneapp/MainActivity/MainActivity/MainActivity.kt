@@ -24,6 +24,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 
+
 data class User(
     val displayName: String = "",
     val emojis: String = "",
@@ -116,6 +117,11 @@ class MainActivity : AppCompatActivity() {
         dialog.getButton(DialogInterface.BUTTON_POSITIVE).setOnClickListener {
             Log.i(TAG, "Clicked on positive button!")
             val emojisEntered = editText.text.toString()
+            if(emojisEntered.isNotBlank()){
+
+                val schedIntent = Intent(this, AcuitySchedule::class.java)
+                startActivity(schedIntent)
+            }
             if (emojisEntered.isBlank()) {
                 Toast.makeText(this, "Cannot submit empty text", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
