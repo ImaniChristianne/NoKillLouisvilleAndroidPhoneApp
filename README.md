@@ -15,6 +15,7 @@ Particular efforts have been made to test code according to standards. Further t
 * [Android Studio](https://developer.android.com/studio/?gclid=Cj0KCQjw48OaBhDWARIsAMd966ACNDMsxPvbTzg-wze3L9wtYWfAXi4_Q-HaM5mpnb4tDemwCCwyY9EaAp3FEALw_wcB&gclsrc=aw.ds)
 * [Acuity Scheduling API](https://support.squarespace.com/hc/en-us)
 ## Get Started
+* Detailed documentation on tools to download and use are given in the docs folder, RS10. This is where cloning the project, and how to obtain a json file to run the app is explained. We also go over how to use an emulator or a physical phone to test the app and how to publish the app online.
 * Once you have the above tools, getting started is easier; check out these helping links:
 * [How to clone project](https://www.geeksforgeeks.org/how-to-clone-android-project-from-github-in-android-studio/)
 * [Additional resources](https://developer.android.com/codelabs/build-your-first-android-app#0)
